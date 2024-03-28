@@ -1,6 +1,6 @@
 # Menu dictionary
 menu = {
-    "Snacks": {
+    "Snack": {
         "Cookie": 0.99,
         "Cherries": 0.69,
         "Apple": 0.49,
@@ -59,11 +59,11 @@ menu = {
 order = []
 
 # Launch the store and present a greeting to the customer
-print("Welcome to Lish's Awesome Food Truck.")
+print("Welcome to Lish's Awesome Food Truck!")
 
 place_order = True
 while place_order:
-    print("Let me know which menu you would like to order from? ")
+    print("Welcome to Lish's Awesome Food Truck, home of Lish's awesome food, may I take your order? Let me know which menu you would like to order from? ")
 
     i = 1
     menu_items = {}
@@ -125,12 +125,12 @@ while place_order:
     else:
         print("You didn't select a number.")
     
-    keep_ordering = input("Would you like to keep ordering? (Y)es or (N)o ").lower()
+    keep_ordering = input("This food is so awesome. Would you like to keep ordering? (Y)es or (N)o ").lower()
     if keep_ordering == "n":
         print("Thank you for your order!")
         break
 
-print("\nThis is what we are preparing for you:\n")
+print("\nThis is the awesome meal from Lish that we are preparing for you:\n")
 print("Item name                 | Price  | Quantity")
 print("--------------------------|--------|----------")
 
